@@ -1,69 +1,61 @@
-📸 Face Recognition Attendance System
-        A Python-based attendance system that uses face recognition to mark student attendance. It captures faces in real-time using OpenCV and logs attendance only during defined time slots (e.g., morning 9–9:30 AM, evening till 4:20 PM). Built with a GUI for easy usage in educational institutions like colleges.
+# Face Attendance System
 
-    ✅ Features
-        🔍 Real-time face detection and recognition using webcam
+This project is a Python-based Face Attendance System that uses face recognition to automatically mark attendance. The system allows real-time recognition using a webcam and stores the attendance records in an Excel sheet.
 
-        🧠 Built using face_recognition, OpenCV, Tkinter
+## 📌 Features
 
-        ⏰ Time-based attendance (e.g., 9–9:30 AM and after 6 hours minimum)
+- Face detection and recognition using OpenCV
+- Graphical User Interface (GUI) for ease of use
+- Attendance records saved to Excel file
+- Option to collect face images and use them for training
+- Time-based attendance validation (e.g., morning and evening sessions)
 
-        📁 Attendance logged into a .csv file
+## 🧠 Technologies Used
 
-        🖼️ Automatically loads known faces from images/ folder
+- Python 3.x
+- OpenCV
+- SQLite (optional)
+- Pandas (for Excel file management)
+- Tkinter (for GUI)
+- face_recognition library
 
-        🖥️ Simple GUI with Start button
 
-        🛑 Automatically exits after marking or skipping attendance
+## 📁 Project Structure
 
-        🧠 Prevents duplicate attendance within time window
+face-attendance/
+├── .git/ # Git repository folder
+├── images/ # Collected face images
+├── attendance.xlsx # Attendance record file
+├── gui_attendance.py # GUI implementation
+├── main.py # Main execution logic
+├── README.md # Project description
 
 
-    '''
-    face-attendance/
-│
-├── images/                # Folder with known face images
-├── attendance.csv         # Log file for storing attendance data
-├── main.py                # Backend logic (Face recognition + logging)
-├── gui_attendance.py      # GUI interface for launching attendance
-└── README.md              # Project documentation
-    '''
+## 🚀 How to Run
 
-🛠️ Tech Stack
-        Python 3.12+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/venkatreddy7569/face-attendance.git
 
-        OpenCV
 
-        face_recognition
+cd face-attendance
 
-        NumPy, Pandas
+pip install -r requirements.txt
 
-        Tkinter (for GUI)
-⚙️ How It Works
-        Load known face encodings from the images/ folder
 
-        Open webcam and detect face using face_recognition
+python main.py
 
-        Compare with known encodings
+📸 How It Works
 
-        If matched, check if attendance can be marked (based on time logic)
+Collect face images and save them in the images/ folder.
 
-        Log name and time to attendance.csv
+When the program runs, it compares detected faces against stored faces.
 
-        GUI allows the user to start process with a single button click
+If a match is found, it marks attendance in attendance.xlsx.
 
-🏫 Use Case
-        Designed for college classroom or lab attendance. Only allows valid entries during:
+👨‍💻 Author
+Venkat Reddy
+GitHub: venkatreddy7569
 
-        🕘 Morning Slot: 9:00 AM – 9:30 AM
-
-        🕓 Evening Slot: After 6-hour gap, till 4:20 PM
-💡 Future Improvements
-        Add admin login for attendance control
-
-        Generate PDF reports
-
-        Auto email or WhatsApp notifications
-
-        Integrate database for persistent storage
-
+📃 License
+This project is for learning and personal use. Feel free to modify or build upon it!

@@ -37,15 +37,16 @@ face-attendance/
    ```bash
    git clone https://github.com/venkatreddy7569/face-attendance.git
 
-
+# file path
 cd face-attendance
 
+# install dependencies
 pip install -r requirements.txt
 
-
+# Output command
 python main.py
 
-📸 How It Works
+# 📸 How It Works
 
 Collect face images and save them in the images/ folder.
 
@@ -53,9 +54,9 @@ When the program runs, it compares detected faces against stored faces.
 
 If a match is found, it marks attendance in attendance.xlsx.
 
-👨‍💻 Author
+# 👨‍💻 Author
 Venkat Reddy
 GitHub: venkatreddy7569
 
-📃 License
+# 📃 License
 This project is for learning and personal use. Feel free to modify or build upon it!

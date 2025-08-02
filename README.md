@@ -21,7 +21,7 @@ This project is a Python-based Face Attendance System that uses face recognition
 
 
 ## 📁 Project Structure
-
+```
 face-attendance/
 ├── .git/ # Git repository folder
 ├── images/ # Collected face images
@@ -29,7 +29,7 @@ face-attendance/
 ├── gui_attendance.py # GUI implementation
 ├── main.py # Main execution logic
 ├── README.md # Project description
-
+```
 
 ## 🚀 How to Run
 
